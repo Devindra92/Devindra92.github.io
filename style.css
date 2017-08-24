@@ -1,27 +1,28 @@
-body {	
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 0 quto;
-  width: 100%
-  height: auto;
+html, body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 0 auto;
 }
 
 #header{
-	 background-image: url("bg.jpg");
+	background-image: url("bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
-	height: 900px;
-	position: relative;
+	height: 1100px;
+	position-center: relative;
+	top: 68px;
 	width: 100%;
-	z-index: 1000; 
+	z-index: 10000;
 }
 
 .navigation {
-  background-color: rgba(255, 255, 255, 0.7);
-  overflow-y: auto;
+	background-color: rgba(255, 255, 255, 0.7);
+  overflow-y: 0 auto;
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   text-align: center;
   width: 100%;
   z-index: 10000;
@@ -29,35 +30,44 @@ body {
 
 .head {
 	background-color: rgba(255, 255, 255, 0.7);
-	padding: 10px;
-	position: absolute;
-	top: 69px;
+	position: relative;
+	top: 0px;
 	left: 0px;
 	text-align: center;
 	width: 100%;
 	left: 0;
-	float: left;
+	padding:30px 0px;
 }
 
 ul{
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
 }	
 
 li {
 	display: inline-block;
-	font-family: 'Abel', sans-serif;
 	font-size: 16px;
 	font-weight: 200;
-	margin: 16px 20px;
+	margin: 10px 10px;
 	text-transform: uppercase;
-
 }
 
-li:hover {
-	color: aquamarine;
+/* pages link */
+a:link {
+    color: #000000;
 }
 
+/* visted link */
+a:visited {
+    color: #000000;
+}
+
+/* selected link */
+a:active {
+    color: green;	
+}
+
+/* home page link*/
 #sym {
   color: #FFFF;
   font-size: 32px;
@@ -65,7 +75,6 @@ li:hover {
 }
 
 .tplayer {
-  box-sizing: border-box;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -74,25 +83,23 @@ li:hover {
 }
 
 h1 {
-  color: #dd820b;
-  font-family: Arial, cursive;
-  font-size: 70px;
-  line-height: 100px;
-  padding: 20px 10px;
-  text-align: center;
+	color: #dd820b;
+	font-size: 70px;
+	line-height: 100px;
+	padding: 20px 10px;
+	text-align: center;
 }
 
 h2 {
-  color: #FFFF;
-  font-family: 'Abel', sans-serif;
-  font-size: 42px;
-  font-weight: 300;
-  text-align: center;
+	color: #FFFF;
+	font-size: 42px;
+	font-weight: 300;
+	text-align: center;
 }
 
 h3 {
+	
   color: Teal;
-  font-family: 'Raleway', sans-serif;
   font-size: 28px;
   text-align: center;
   text-transform: uppercase;
@@ -103,59 +110,53 @@ p {
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 300;
+  text-align: center;
 }
 
 .btn {
- 
-  background-color: #14213D;
-  color: #FFF;
-  font-family: 'Amatic SC', cursive;
-  font-size: 26px;
-  padding: 14px;
+	border-radius:12px;
+	border: 2px solid #dd820b;
+	color: #FFF;
+	font-family: 'Amatic SC', cursive;
+	font-size: 26px;
+	padding: 14px;
 }
 
 .teams {
-	width: 70%;
-	top: 280px;
-	margin: 0px auto;
-	padding: 20px 0px;
-	text-align: center-right;
-	box-sizing: border-box;
-    position: relative;
+	top: 250px;
+	margin: 5px auto;
+	padding: 30px 30px;
+	text-align: center;
+	position: relative;
 }
 
 .team {
   display: inline-block;
-  margin:25px 25% 25px 25%; 
-  text-align: center-right;
-  width: 45%;
+  margin: 20px 3% 20px 3%; 
+  text-align: center;
+  width: 40%;
   box-sizing: border-box;
-  padding: 20px 0px;
-  
+  padding: 10px 10px;
+  height: 300px;
+  position: relative;
 }
 
 img {
 	border-radius: 100%;
 	width: 100%;
 	height: 100%;
-	display: inline-block;
+	display: inline-table;
 	position: center;
 }
 
 .network img {
-	height: 25px;
+	width: 20%;
+	height: 20%;
 	display: inline-block;
-	background-size: cover;
+	padding: 0px;
 }
 
-.network {
-	width: 10%;
-	display: inline-block;
+.network img:hover {
+	transform: rotate(90deg) scale(2);
+	cursor: pointer;
 }
-
-.footer p{
-	text-align: center;
-	font-size: 20px;
-}
-
-	
